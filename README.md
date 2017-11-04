@@ -4,6 +4,10 @@
 
 * es版本2.3
 
+## 安装
+
+composer require ljw/es:dev-master
+
 ## 配置
 
 ~~~php
