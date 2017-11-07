@@ -184,6 +184,7 @@ class Query
     public function size($size)
     {
         $this->size = $size;
+        return $this;
     }
 
     public function getSort()
@@ -222,6 +223,7 @@ class Query
     public function aggs($aggs)
     {
         $this->aggs = $aggs;
+        return $this;
     }
 
     public function group($field, $_query = null, $alias = '')
