@@ -24,7 +24,10 @@ class Model
      * 索引设置
      * @var array
      */
-    protected $setting = [];
+    protected $setting = [
+        'number_of_shards'   => 1,
+        'number_of_replicas' => 1
+    ];
     /**
      * 索引参数
      * @var array
