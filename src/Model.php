@@ -44,7 +44,8 @@ class Model
 
     public function __construct($config = [])
     {
-        $model_name = strtolower(basename(static::class));
+        $models = explode('\\', static::class);
+        $model_name = strtolower(end($models));
         if (!empty($config)) {
             $this->alias or $this->setAlias($config['alias']);
             $this->index or $this->setIndex($config['index']);
